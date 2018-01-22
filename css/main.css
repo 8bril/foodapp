@@ -1,0 +1,52 @@
+body {
+	background: #EAE2D6;
+	font-family: 'Muli', sans-serif;
+	font-size: 1em;
+}
+
+#splash {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100vw;
+    font-size: 7em;
+    background-color: #D5C3AA;
+    color: #867666;
+    font-family: 'Sacramento', cursive;
+    padding-top: 3.5em;
+
+}
+
+.position-i {
+	position: initial;
+	padding: 2em;
+}
+
+.title {
+	font-size: 2em;
+}
+
+.map {
+	border: 2px solid #E1B80D;
+	padding: 1em;
+
+}
+
+img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+img:hover {
+  border: 5px solid #D5C3AA;
+  border-radius: 100%;
+}
+
+
+#EAE2D6 #D5C3AA #867666 #E1B80D
+
+

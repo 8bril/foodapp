@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bon appeatit!</title>
+<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<section id="splash">
+  <div class="row">
+    <div class="col-xs-12">
+       <p class="text-center">bon appeatit!</p>
+    </div>
+  </div>
+</section>
+
+  <div class="container title">
+  <div class="row">
+    <div class="col-xs-offset-1 col-xs-4 position-i">
+          <p>bon appeatit!</p>
+      </div>
+    <div class="col-xs-offset-1 col-xs-4 position-i">
+          <img src="assets/images/icon.png" width="70" height="70">
+      </div>
+</div>
+</div>
+
+<div class="container">
+ <div class="row">
+    <div class="col-xs-offset-2 col-xs-8 map position-i">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240863.68534018478!2d-99.28404352828692!3d19.39100357833827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1516499762252" width="100%" height="150" frameborder="0" allowfullscreen></iframe>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+ <div class="row">
+    <div class="col-xs-offset-2 col-xs-8 position-i">
+       <select class="form-control" id="filter" onchange="foodOption(event)">
+          <option>¡Elije tu comida!</option>
+          <option value="Mexicana" data-food="Mexicana">Comida Mexicana</option>
+          <option value="Italiana" data-food="Italiana">Comida Italiana</option>
+          <option value="China" data-food="China">Comida China</option>
+       </select>
+     </div>
+   </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-3 position-i food">
+      <div class="container">
+  <!-- Trigger the modal with a button -->
+  <img src = "http://images.bigoven.com/image/upload/t_recipe-256/fish-tacos-with-lime-cilantro-crema-3.jpg" width = "100" data-toggle="modal" data-target="#tacos" />
+
+  <!-- Modal -->
+  <div class="modal fade" id="tacos" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Taqueria</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8829288100846!2d-99.11352118552512!3d19.460613686868392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f967c95c06ab%3A0x7477a957d9b3c5d!2sTacos+%22El+Papi%22!5e0!3m2!1ses!2smx!4v1516402308155" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
+          <h2>Taqueria Bonita</h2>
+          
+          <div class="row">
+             <div class="col-md-6"> 
+                <p>Direccion Numero Colonia CP, México DF.</p>
+                </div>
+             <div class="col-md-6">
+              <p>Menu</p>
+                <ul>
+                   <li> Pastor $10 </li>
+                   <li> Suadero $13 </li>  
+                </ul>
+                </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning">¡Haz tu pedido!</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+    </div>
+    <div class="col-xs-3 position-i">
+      <div class="container">
+  <!-- Trigger the modal with a button -->
+  <img src = "http://mxcdn.ar-cdn.com/recipes/port250/134db122-e56c-4594-b1ba-fa46018b9d77.jpg" width = "100" data-toggle="modal" data-target="#mole" />
+
+  <!-- Modal -->
+  <div class="modal fade" id="mole" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">El mejor mole de méxico</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4236900247624!2d-99.15505264984887!3d19.437291245503722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d3c3f6aaa1%3A0xd209fe442835d4a6!2sMole+Mexicano!5e0!3m2!1ses-419!2smx!4v1516506970276" width="100%" frameborder="0" allowfullscreen></iframe>
+          <h2>Mole Mexicano</h2>
+          
+          <div class="row">
+             <div class="col-md-6"> 
+                <p>Direccion Numero Colonia CP, México DF.</p>
+                </div>
+             <div class="col-md-6">
+              <p>Menu</p>
+                <ul>
+                   <li> Mole Verde $69</li>
+                   <li> Mole Rojo $78 </li>  
+                </ul>
+                </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning">¡Haz tu pedido!</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+    </div>
+    <div class="col-xs-3 position-i">
+      <div class="container">
+  <!-- Trigger the modal with a button -->
+  <img src = "http://images.bigoven.com/image/upload/t_recipe-256/bean-and-cheese-enchiladas-3.jpg" width = "100" data-toggle="modal" data-target="#enchiladas" />
+
+  <!-- Modal -->
+  <div class="modal fade" id="enchiladas" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Enchiladas</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8829288100846!2d-99.11352118552512!3d19.460613686868392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f967c95c06ab%3A0x7477a957d9b3c5d!2sTacos+%22El+Papi%22!5e0!3m2!1ses!2smx!4v1516402308155" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <h2>Deliciosas enchiladas</h2>
+          
+          <div class="row">
+             <div class="col-md-6"> 
+                <p>Direccion Numero Colonia CP, México DF.</p>
+                </div>
+             <div class="col-md-6">
+              <p>Menu</p>
+                <ul>
+                   <li> Verdes $80 </li>
+                   <li> Rojas $63 </li>  
+                </ul>
+                </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning">¡Haz tu pedido!</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+     </div>
+   </div>
+ </div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
